@@ -39,3 +39,49 @@ img {
 section {
     padding: 50px 100px;
 }
+
+/* header section */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s linear;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-style: 1rem;
+    font-weight: 600;
+    column-gap: 0.2rem;
+    color: var(--text-color);
+}
+.logo .bx {
+    font-style: 24px;
+    color: var(--main-color);
+}
+.navbar {
+    display: flex;
+    column-gap: 4.4rem;
+}
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.navbar a:hover {
+    color: var(--main-color);
+}
+.header-icons {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100000;
+}
+#menu-icon {
+    display: none;
+}
