@@ -85,3 +85,22 @@ header {
 #menu-icon {
     display: none;
 }
+
+/* search-box */
+.search-box {
+    position: absolute;
+    top: 110%;
+    right: -100%;
+}
+.search-box input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    width: 280px;
+    box-shadow: var(--box-shadow);
+}
+.search-box.active {
+    right: 1rem;
+    transition: 0.2s;
+}
