@@ -395,3 +395,10 @@ header {
 .payment img {
     width: 44px;
 }
+
+/* copyright section */
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);  
+}
