@@ -5,6 +5,7 @@ document.querySelector('#search-icon').onclick = () => {
     search.classList.toggle('active');
     cart.classList.remove('active');
     user.classList.remove('active');
+    navbar.classList.remove('active');
 }
 
 // for cart section
@@ -14,6 +15,7 @@ document.querySelector('#cart-icon').onclick = () => {
     cart.classList.toggle('active');
     search.classList.remove('active');
     user.classList.remove('active');
+    navbar.classList.remove('active');
 }
 
 // for user section
@@ -23,7 +25,32 @@ document.querySelector('#user-icon').onclick = () => {
     user.classList.toggle('active');
     search.classList.remove('active');
     cart.classList.remove('active');
+    navbar.classList.remove('active');
 }
+
+// for menu bar section
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-icon').onclick = () => {
+    navbar.classList.toggle('active');
+    search.classList.remove('active');
+    cart.classList.remove('active');
+    user.classList.remove('active');
+}
+
+window.onscroll = () => {
+    search.classList.remove('active');
+    cart.classList.remove('active');
+    user.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+// Navbar scroll
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('shadow', window.scrollY > 0);
+})
 
 // <!-- Initialize Swiper -->
   var swiper = new Swiper(".new-arrival", {

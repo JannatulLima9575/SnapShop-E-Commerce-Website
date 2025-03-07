@@ -67,6 +67,10 @@ header {
     padding: 20px 100px;
     transition: 0.5s linear;
 }
+header.shadow {
+    background: var(--bg-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
 .logo {
     display: flex;
     align-items: center;
@@ -162,8 +166,8 @@ header {
 /* user section */
 .user {
     position: absolute;
-    right: -100%;
     top: 110%;
+    right: -100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,4 +405,74 @@ header {
     padding: 20px;
     text-align: center;
     color: var(--text-color);  
+}
+
+/* Responsive part */
+@media (max-width: 1058px) {
+    header {
+        padding: 18px 60px;
+    }
+    section {
+        padding: 50px 60px;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px 60px;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        width: 240px;
+        height: 100vh;
+        top: 100%;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s linear;
+        text-align: left;
+    }
+    .navbar.cart.active {
+        right: 0;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-text span {
+        font-size: 0.8rem;
+    }
+    .home-text h1 {
+        font-size: 1.7rem;
+    }
+    .cart img {
+        width: 77px;
+    }
+    .heading h1 {
+        font-size: 1.4rem;
+    }
 }
