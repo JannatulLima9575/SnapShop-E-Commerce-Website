@@ -166,8 +166,8 @@ header.shadow {
 /* user section */
 .user {
     position: absolute;
-    top: 110%;
     right: -100%;
+    top: 110%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,6 +192,7 @@ header.shadow {
 .user .login-btn:hover {
     background: var(--text-color);
 }
+
 .user input {
     border: none;
     outline: none;
@@ -199,6 +200,9 @@ header.shadow {
     padding: 10px;
     border-radius: 0.5rem;
     width: 100%;
+}
+.user p {
+    font-size: 0.938rem;
 }
 .user a {
     text-decoration: underline;
